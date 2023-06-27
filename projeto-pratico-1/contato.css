@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav {
+    width: 60%;
+}
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'kdam Thmor Pro', sans-serif;;
+}
+li:hover {
+    color: #D21617;
+}
+#logo {
+    width: 150px;
+    height: auto;
+}
+#banner {
+    background-image: url('https://pbs.twimg.com/media/FBwJWeQXIAItfyH.jpg:large');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+}
+.título-contato {
+    color: #fff;
+    font-size: 17px;
+    font-family: 'kdam Thmor Pro', sans-serif;;
+}
+.contato-container {
+    width: 100%;
+    height: 280px;
+    background-color: #D21617;
+}
+.título-email {
+    color: #fff;
+    font-size: 13px;
+    font-family: 'kdam Thmor Pro', sans-serif;;
+    background-color: #D21617;
+}
+#email {
+    width: 100%;
+    height: 25px;
+    color: #fff;
+    font-size: 13px;
+    font-family: 'kdam Thmor Pro', sans-serif;;
+}
+.título-mensagem {
+    color: #fff;
+    font-size: 13px;
+    font-family: 'kdam Thmor Pro', sans-serif;;
+    background-color: #D21617;
+}
+#mensagem {
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    font-size: 13px;
+    font-family: 'kdam Thmor Pro', sans-serif;;
+}
+.endereço {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'kdam Thmor Pro', sans-serif;;
+    background-color: #D21617;
+    margin-top: 10px;
+}
+.telefone {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'kdam Thmor Pro', sans-serif;;
+    background-color: #D21617;
+    margin-top: 10px;
+}
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+span {
+    color: #fff;
+    font-family: 'kdam Thmor Pro', sans-serif;;
+}
+.footer-navigation {
+    display: none;
+}
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    #banner {
+        background-position: 37%;
+    }
+    .título-contato {
+        text-align: center;
+    }
+    .título-email {
+        text-align: center;
+    }
+    .título-mensagem {
+        text-align: center;
+    }
+    .endereço {
+        text-align: center;
+    }
+    .telefone {
+        text-align: center;
+    }
+}

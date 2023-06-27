@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav {
+    width: 60%;
+}
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'kdam Thmor Pro', sans-serif;;
+}
+li:hover {
+    color: #D21617;
+}
+#logo {
+    width: 150px;
+    height: auto;
+}
+#banner {
+    background-image: url('https://pbs.twimg.com/media/FBwJWeQXIAItfyH.jpg:large');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+}
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cenas-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+.card {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: 20% 20%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #D21617;
+    font-size: 13px;
+    font-family: 'kdam Thmor Pro', sans-serif;;
+}
+.cena-1 {
+    background-image: url('https://portalpopline.com.br/wp-content/uploads/2022/02/batman-pre-estreia.jpg');
+}
+.cena-2 {
+    background-image: url('https://s2.glbimg.com/qS9775Ck60mP73myStoe3OWChmA=/0x0:6000x4000/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/5/n/O7ArmoTOCKUxA1LCoNBg/the-batman-zoe-kravitz-robert-pattinson.jpeg');
+}
+.cena-3 {
+    background-image: url('https://img.olhardigital.com.br/wp-content/uploads/2022/02/the-batman-robert-pattinson.jpeg');
+}
+.cena-4 {
+    background-image: url('https://cinepop.com.br/wp-content/uploads/2022/02/batman-02-1.jpg');
+}
+.cena-5 {
+    background-image: url('https://cinepop.com.br/wp-content/uploads/2020/10/batman-7.jpeg');
+}
+.cena-6 {
+    background-image: url('https://media.comicbook.com/2020/10/batman-set-2-1241024.jpeg?auto=webp&width=1200&height=731&crop=1200:731,smart');
+}
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+span {
+    color: #fff;
+    font-family: 'kdam Thmor Pro', sans-serif;;
+}
+.footer-navigation {
+    display: none;
+}
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    #banner {
+        background-position: 37%;
+    }
+    .cards-content {
+        grid-template-columns: 1fr;
+    }
+}
